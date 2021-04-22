@@ -15,10 +15,11 @@
     <body>
     <div class="container-fluid">
     <div class="row">
-@include('inc.side-header')
+        @include('inc.side-header')
 
         <div class="col-md-8 col-lg-9 content-container" >
             @include ('inc.about-us')
+            @include('inc.news')
         </div>
 
 
