@@ -20,6 +20,9 @@
         <div class="col-md-8 col-lg-9 content-container" >
             @include ('inc.about-us')
             @include('inc.news')
+            @include('inc.vacancies')
+            @include('inc.courses')
+            @include('inc.create-cv')
         </div>
 
 

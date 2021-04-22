@@ -13,19 +13,19 @@
         <!-- Пункты вертикального меню -->
         <ul class="navbar-nav">
             <li class="nav-item ">
-                <a class="nav-link font-menu" href="#link-1">About us</a>
+                <a class="nav-link font-menu" href="#about-us">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#link-2">Новости</a>
+                <a class="nav-link font-menu" href="#news">Новости</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#link-3">Вакансии</a>
+                <a class="nav-link font-menu" href="#vacancies">Вакансии</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#link-4">Курсы</a>
+                <a class="nav-link font-menu" href="#courses">Курсы</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#link-5">Оставить резюме</a>
+                <a class="nav-link font-menu" href="#create-cv">Оставить резюме</a>
             </li>
         </ul>
     </div>
