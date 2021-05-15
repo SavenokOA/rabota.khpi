@@ -8,8 +8,8 @@
 <div class="container">
     @include('inc.subscribe')
     @include('inc.about-us')
-
-
+    @include('inc.vacancies')
+    @include('inc.add-vacancy')
 
 </div>
 @endsection

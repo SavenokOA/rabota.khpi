@@ -15,10 +15,10 @@
                 <a class="nav-link" style="color: #363636;" href="#">@lang('main.about_us')<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.vacancies_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.vacancies')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.add_vacancy_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.add_vacancy')</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: #363636;" href="#">@lang('main.job_fair_navbar')</a>

@@ -44,9 +44,9 @@
             <div class="container">
                 <div class="carousel-caption">
                     @if(session('locale')=='ua')
-                        <img class="photo-carousel" src="/image/gIRLS.png" alt="">
+                        <img class="photo-carousel" src="/image/team3.png" alt="">
                     @elseif(session('locale')=='en')
-                        <img class="photo-carousel" src="/image/gIRLSeng.png" alt="">
+                        <img class="photo-carousel" src="/image/team3 eng.png" alt="">
                     @endif
                 </div>
             </div>
@@ -59,6 +59,11 @@
         <h3 class="team-work">@lang('main.areas_of_work') </h3>
     </div>
     <div class="col-md-6">
-        <center> <img class="adv-photo"   src="/image/Advantages.png"></center>
+        @if(session('locale')=='ua')
+            <center> <img class="adv-photo"   src="/image/Advantages.png"></center>
+        @elseif(session('locale')=='en')
+            <center> <img class="adv-photo"   src="/image/Advantages eng.png"></center>
+        @endif
+
     </div>
 </div>

@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('/fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('/fonts/gilroy-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('/fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
     font-family: 'Gilroy Semibold';
     src: url('fonts/Gilroy-SemiBold.eot');
     src: url('fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
@@ -178,6 +187,75 @@ body{
         background-color: transparent;
         height: 200px;
     }
+}
+
+.cont-vacancy{
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color:#ffffff;
+    border: 6px #363636;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 }
+
+#view-all{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#view-all a{
+    justify-content: center;
+    font-family: "Gilroy Bold";
+    color: #363636;
+}
+
+.cont-vac-name h4{
+    font-family: "Gilroy Bold";
+    font-size: 20px;
+    color: #777575;
+    padding-top: 10px;
+
+}
+.cont-vac-name p{
+    font-family: "Gilroy Semibold";
+    font-size: 18px;
+    color: #363636;
+}
+
+.vac-row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.browse-logo{
+    margin-left: 30px;
+}
+
+.form-fields{
+    font-family: Gilroy-Regular;
+    font-size: 25px;
+    color: #BDBCBC;
+}
+.my-form-button{
+    font-family: "Gilroy Extra Bold";
+    background-color: #BF1812;
+    border-color: #6c757d;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    font-size: 30px;
+    border-radius: .25rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.5;
+    color: #ffffff;
+    width: 100%;
+}
+
 
