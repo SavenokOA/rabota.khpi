@@ -1,40 +1,42 @@
-<div class="col-md-4 col-lg-3 navbar-container fixed">
-<!-- Вертикальное меню -->
-<nav class="navbar navbar-expand-md ">
-    <div class="logo">
-        <a class="navbar-brand" href="#">
-        <img class="rounded img-fluid" src="\image\logo-removebg-preview (1).png"  alt="" >
-    </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light my_nav">
+
+    <a class="navbar-brand" href="#"><img class="rounded img-fluid logo" src="\image\Logo3.png" alt=""></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbar">
-        <!-- Пункты вертикального меню -->
-        <ul class="navbar-nav">
-            <li class="nav-item ">
-                <a class="nav-link font-menu" href="#about-us">About us</a>
+    <div class="collapse navbar-collapse justify-content-center" style="margin-top: -30px;" id="navbarNav">
+        <ul class="navbar-nav my_nav" >
+            <li class="nav-item active">
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.about_us_navbar')<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#news">Новости</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.vacancies_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#vacancies">Вакансии</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.add_vacancy_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#courses">Курсы</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.job_fair_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-menu" href="#create-cv">Оставить резюме</a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.helpful_information_navbar')</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.news_and_projects_navbar')</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.contacts_navbar')</a>
             </li>
         </ul>
+
+        <div class="lang-nav">
+            <a сlass="nav-link" href="{{route('locale', 'ua')}}">UA</a>
+            <a сlass="btn-outline-success" href="{{route('locale', 'en')}}">EN</a>
+        </div>
+
+
     </div>
 </nav>
-</div>
-
-
-
-
-
 
 

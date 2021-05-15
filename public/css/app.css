@@ -1,66 +1,112 @@
-.logo {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url(/fonts/Gilroy-SemiBold.eot?8134b9ab378c54626928c6a4e62b63bf);
+    src: url(/fonts/Gilroy-SemiBold.eot?8134b9ab378c54626928c6a4e62b63bf?#iefix) format('embedded-opentype'),
+    url(/fonts/Gilroy-SemiBold.woff?e38937dbf8202c1448029851a98cb96a) format('woff'),
+    url(/fonts/Gilroy-SemiBold.ttf?6780292641f883b3dad36614cac8dd5a) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik Medium';
+    src: url(/fonts/Graphik-Medium.eot?82c3a8cb2eb608a62d65c8fe6de8f0ec);
+    src: local('☺'), url(/fonts/Graphik-Medium.woff?a65f15c44353b8379642aa530280b055) format('woff'), url(/fonts/Graphik-Medium.ttf?8614713d50c6af7a436d08b489e08120) format('truetype'), url(/fonts/Graphik-Medium.svg?f58d53eb72d7239d4ca862b0b176fb8f) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Extra Bold';
+    src: url(/fonts/Gilroy-ExtraBold.eot?9000ed2a78b7dba6fcd6ed726028dd56);
+    src: url(/fonts/Gilroy-ExtraBold.eot?9000ed2a78b7dba6fcd6ed726028dd56?#iefix) format('embedded-opentype'),
+    url(/fonts/Gilroy-ExtraBold.woff?cb761043a2e505ff53c1db3cb39673e6) format('woff'),
+    url(/fonts/Gilroy-ExtraBold.ttf?0ac6879cd286550da90326ac0ba520e9) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url(/fonts/Gilroy-Bold.eot?a732fed1bc6140852a0bcc237f16618e);
+    src: url(/fonts/Gilroy-Bold.eot?a732fed1bc6140852a0bcc237f16618e?#iefix) format('embedded-opentype'),
+    url(/fonts/Gilroy-Bold.woff?5fb38b9fa452b5814397d5bcce0d2d5e) format('woff'),
+    url(/fonts/Gilroy-Bold.ttf?b900325e44ec0c673e88af6e02e3b453) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo{
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+.lang-nav{
+    width: 100px;
+    margin-left: 50px;
+
+
+}
+.my_nav{
+    background: transparent;
+    font-family: 'Gilroy Semibold';
+    color: #363636;
+    font-size: 20px;
 }
 
 body{
-     background-image: url("/image/Anastasiya-Sova7.jpg");
-     background-size: auto auto;
+     background-image: url("/image/Design 2.png");
+     background-size: cover;
      background-attachment: fixed;
+     background-position: 50% 50%;
  }
 
- .fixed{
-     background-color: rgba(123, 138, 138, 0.6);
- }
+
  .font-menu {
      color: whitesmoke;
      font-size: 25px;
  }
 
-@media (min-width: 768px) {
-    .navbar-container {
-        position: sticky;
-        top: 0;
-        overflow-y: auto;
-        height: 100vh;
-    }
-    .navbar-container .navbar {
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        height: 100%;
-    }
-    .navbar-container .navbar-collapse {
-        align-items: flex-start;
-    }
-    .navbar-container .nav {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .navbar-container .navbar-nav {
-        flex-direction: column !important;
-    }
-}
+ .main-row{
+     margin-top: -300px;
+ }
+ .main-photo{
+     width: 85%;
+     height: auto;
+ }
 
-#navbar{
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto
-}
-h1{
-    margin-left: fill;
-    margin-top: auto;
-}
+ .mail-top{
+     background-color: #ffffff;
+     margin-top: 25px;
+     border-radius: 5px;
+     width: 80%;
+     border: 6px #363636;
+ }
 
-.block{
-    color: white;
-    margin-top: 25px;
-    width: auto;
-    border-radius: 15px;
-    box-shadow:0 0 10px #000;
-    background-color: rgba(25,25,25,0.4);
+ .mail-top {
+     font-family: 'Gilroy Bold';
+     color: #363636;
+     font-size: 50px;
 
-}
+ }
+ .mail-top-subscription{
+     font-family: 'Graphik Medium';
+     color: #646D89;
+     font-size: 20px;
+ }
+ .button-email{
+     background-color: #BF1812;
+     border-color: #6c757d;
+     border: 1px solid transparent;
+     padding: .375rem .75rem;
+     font-size: 1rem;
+     border-radius: .25rem;
+     text-align: center;
+     text-decoration: none;
+     vertical-align: middle;
+     display: inline-block;
+     font-weight: 400;
+     line-height: 1.5;
+ }
+
 
