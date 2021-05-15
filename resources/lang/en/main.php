@@ -13,6 +13,8 @@ return[
     'enter_email'=>'Please enter your email',
     'subscribe'=>'Subscribe',
     'about_us_desc'=>'Many graduates face the problem of employment at the door of their home university. NTU "KhPI" Career Center was established to help each student navigate the modern labor market, compare their abilities with the requirements of the desired profession, choose a strategy to acquire the necessary skills and find a potential employer.',
+    'team'=>'Team',
+    'areas_of_work'=>'Main areas of work',
 
 
 

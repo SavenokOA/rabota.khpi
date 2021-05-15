@@ -90,7 +90,7 @@ body{
      margin-top: -300px;
  }
  .main-photo{
-     width: 85%;
+     width: 100%;
      height: auto;
  }
 
@@ -141,5 +141,46 @@ body{
     width: 700px;
 }
 
+.team-work{
+    font-family: 'Gilroy Semibold';
+    color: #363636;
+    font-size: 40px;
+    margin-top: 40px;
+
+}
+.my-carousel{
+    background-color: transparent;
+    height: 350px;
+}
+
+.my-carousel-li{
+    background-color: #5B0000;
+}
+.photo-carousel{
+    width: 100%;
+    height: auto;
+    position: center;
+}
+
+
+@media(min-width: 768px) {
+    .adv-photo{
+        margin-top: 113px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .adv-photo{
+        width: 100%;
+        height: auto;
+    }
+    .my-carousel{
+        background-color: transparent;
+        height: 200px;
+    }
+
+}
 
 
