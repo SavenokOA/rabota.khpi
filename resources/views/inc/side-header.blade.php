@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light my_nav">
 
-    <a class="navbar-brand" href="#"><img class="rounded img-fluid logo" src="\image\Logo3.png" alt=""></a>
+    @if(session('locale')=='ua')
+        <a class="navbar-brand" href="#"><img class="rounded img-fluid logo" src="\image\Logo3.png" alt=""></a>
+    @elseif(session('locale')=='en')
+        <a class="navbar-brand" href="#"><img class="rounded img-fluid logo" src="\image\Logo3 eng.png" alt=""></a>
+    @endif
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,7 +12,7 @@
     <div class="collapse navbar-collapse justify-content-center" style="margin-top: -30px;" id="navbarNav">
         <ul class="navbar-nav my_nav" >
             <li class="nav-item active">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.about_us_navbar')<span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color: #363636;" href="#">@lang('main.about_us')<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: #363636;" href="#">@lang('main.vacancies_navbar')</a>
@@ -28,15 +32,21 @@
             <li class="nav-item">
                 <a class="nav-link" style="color: #363636;" href="#">@lang('main.contacts_navbar')</a>
             </li>
+
+            <li class="nav-item" style="margin: 0 30px;">
+                @if(session('locale')=='ua')
+                    <a сlass="lang-nav disabled" id="lang-off" href="{{route('locale', 'ua')}}">UA |</a>
+                    <a сlass="lang-nav" id="lang-on" href="{{route('locale', 'en')}}">EN</a>
+
+                @elseif(session('locale')=='en')
+                    <a сlass="lang-nav" id="lang-on" href="{{route('locale', 'ua')}}">UA</a>
+                    <a сlass="lang nav disabled" id="lang-off" href="{{route('locale', 'en')}}">| EN</a>
+
+                @endif
+            </li>
         </ul>
-
-        <div class="lang-nav">
-            <a сlass="nav-link" href="{{route('locale', 'ua')}}">UA</a>
-            <a сlass="btn-outline-success" href="{{route('locale', 'en')}}">EN</a>
-        </div>
-
-
     </div>
+
 </nav>
 
 
