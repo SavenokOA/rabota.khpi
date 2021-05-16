@@ -10,7 +10,7 @@ Route::middleware(['set_locale'])->group(function(){
 
     Route::get('/', function () {
         return view('welcome');
-    });
+    })->name('welcome');
 
 
     Route::get('locale/{locale}', [MainController::class, 'changeLocale'])->name('locale');

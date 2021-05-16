@@ -4,7 +4,7 @@
     @if ($errors->any())
         <div class="alert alert-danger">
             @foreach($errors->all() as $error)
-                <li id="error-li">{{$error}}</li>
+                <li class="my-alerts">{{$error}}</li>
             @endforeach
         </div>
     @endif
@@ -52,7 +52,7 @@
             </div>
 
             <div class="col-sm-12">
-                <button class="my-form-button" type="submit">@lang('main.add_vacancy')</button>
+                <button   class="my-form-button" type="submit">@lang('main.add_vacancy')</button>
             </div>
 
         </div>

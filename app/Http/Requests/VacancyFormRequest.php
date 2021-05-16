@@ -29,7 +29,7 @@ class VacancyFormRequest extends FormRequest
             'ScopeCompany'=>'max:50|string|nullable',
             'ActivityCompany'=>'max:50|',
             'WebsiteCompany'=>'nullable|string',
-            'NumberCompany'=>'required|numeric|max:12',
+            'NumberCompany'=>'required|numeric|',
             'EmailCompany'=>'required|email:rfc,dns',
             'LogoCompany'=>'file|image|nullable|max:300',
             'VacancyDescription'=>'required|max:1000',
