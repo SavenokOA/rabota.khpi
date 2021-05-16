@@ -3,7 +3,7 @@ return[
     'title' => 'Знайти роботу - легко!',
     'about_us' => 'Про нас',
     'vacancies' =>'Вакансії',
-    'add_vacancy_' => 'Додати вакансію',
+    'add_vacancy' => 'Додати вакансію',
     'job_fair_navbar' => 'Ярмарок вакансій',
     'helpful_information_navbar' => 'Корисна інформація',
     'news_and_projects_navbar' => 'Новини та проекти',
@@ -24,6 +24,6 @@ return[
     'contact_number'=>'Контактний телефон',
     'your_email'=>'Ваш e-mail',
     'vacancy_description'=>'Опис вакансії (вимоги, умови, режим роботи)',
-    'choose_logo'=>'Оберіть лого компаніі',
+    'choose_logo'=>'Оберіть лого',
     'browse'=>'Обрати файл...'
 ];

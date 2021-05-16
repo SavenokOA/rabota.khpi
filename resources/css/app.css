@@ -176,6 +176,13 @@ body{
         width: 100%;
         height: auto;
     }
+    .browse-logo{
+         margin-left: 30px;
+         font-family: Gilroy-Regular;
+         font-size: 20px;
+         color: #BDBCBC;
+
+     }
 }
 
 @media(max-width: 768px) {
@@ -187,7 +194,14 @@ body{
         background-color: transparent;
         height: 200px;
     }
-}
+    .browse-logo {
+
+        font-family: Gilroy-Regular;
+        font-size: 20px;
+        color: #BDBCBC;
+    }
+
+    }
 
 .cont-vacancy{
     margin-left: auto;
@@ -232,9 +246,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.browse-logo{
-    margin-left: 30px;
-}
+
 
 .form-fields{
     font-family: Gilroy-Regular;

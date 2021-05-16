@@ -7,6 +7,7 @@
     url('/fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font-face {
     font-family: 'Gilroy Semibold';
     src: url(/fonts/Gilroy-SemiBold.eot?8134b9ab378c54626928c6a4e62b63bf);
@@ -178,6 +179,13 @@ body{
         width: 100%;
         height: auto;
     }
+    .browse-logo{
+         margin-left: 30px;
+         font-family: Gilroy-Regular;
+         font-size: 20px;
+         color: #BDBCBC;
+
+     }
 }
 
 @media(max-width: 768px) {
@@ -189,7 +197,14 @@ body{
         background-color: transparent;
         height: 200px;
     }
-}
+    .browse-logo {
+
+        font-family: Gilroy-Regular;
+        font-size: 20px;
+        color: #BDBCBC;
+    }
+
+    }
 
 .cont-vacancy{
     margin-left: auto;
@@ -234,9 +249,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.browse-logo{
-    margin-left: 30px;
-}
+
 
 .form-fields{
     font-family: Gilroy-Regular;
@@ -260,5 +273,10 @@ body{
     width: 100%;
 }
 
+#error-li{
+    font-family: Roboto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 

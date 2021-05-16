@@ -24,7 +24,7 @@ return[
     'contact_number'=>'Contact number',
     'your_email'=>'Your Email',
     'vacancy_description'=>'Vacancy description (requirements, conditions, mode of work)',
-    'choose_logo'=>'Choose the logo of company',
+    'choose_logo'=>'Choose the logo',
     'browse'=>'Browse',
 
 
