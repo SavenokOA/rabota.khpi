@@ -41,7 +41,7 @@
 
             <div class="col-sm-6 form-fields">
                 <label class="btn btn-info">
-                    @lang('main.browse') <input id="LogoCompany" name="LogoCompany" type="file" hidden>
+                    @lang('main.browse') <input id="LogoCompany" name="LogoCompany"  type="file" hidden>
                 </label>
                 <label class="form-label browse-logo">@lang('main.choose_logo')</label>
             </div>

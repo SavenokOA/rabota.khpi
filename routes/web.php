@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\VacancyFormController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
@@ -8,9 +9,8 @@ use App\Http\Controllers\MainController;
 
 Route::middleware(['set_locale'])->group(function(){
 
-    Route::get('/', function () {
-        return view('welcome');
-    })->name('welcome');
+    Route::get('/', [MainController::class, 'ReturnLocale']);
+    Route::get('/main', [MainController::class, ''])->name('welcome');
 
 
     Route::get('locale/{locale}', [MainController::class, 'changeLocale'])->name('locale');
