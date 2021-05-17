@@ -18,7 +18,7 @@ class CreateVacanciesTable extends Migration
             $table->id();
             $table->string('NameVacancy');
             $table->string('NameCompany');
-            $table->string('ScopeCompany')->nullable();
+            $table->text('ScopeCompany')->nullable();
             $table->string('ActivityCompany')->nullable();
             $table->string('WebsiteCompany')->nullable();
             $table->string( 'NumberCompany');

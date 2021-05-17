@@ -1,13 +1,14 @@
 @font-face {
     font-family: 'Gilroy-Regular';
-    src: url('/fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
-    src: url('/fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-    url('/fonts/gilroy-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-    url('/fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+    src: url(/fonts/gilroy-regular.eot); /* IE 9 Compatibility Mode */
+    src: url(/fonts/gilroy-regular.eot?#iefix) format('embedded-opentype'), /* IE < 9 */
+    url(/fonts/gilroy-regular.woff2) format('woff2'), /* Super Modern Browsers */
+    url(/fonts/gilroy-regular.woff) format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url(/fonts/gilroy-regular.ttf) format('truetype'), /* Safari, Android, iOS */
+    url(/fonts/gilroy-regular.svg#gilroy-regular) format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font-face {
     font-family: 'Gilroy Semibold';
     src: url(/fonts/Gilroy-SemiBold.eot?8134b9ab378c54626928c6a4e62b63bf);
@@ -110,13 +111,14 @@ body{
      border-radius: 5px;
      width: 80%;
      border: 6px #363636;
+ }
+
+ .mail-top {
      font-family: 'Gilroy Bold';
      color: #363636;
      font-size: 50px;
-     padding-bottom: 5px;
+
  }
-
-
  .mail-top-subscription{
      font-family: 'Graphik Medium';
      color: #646D89;
@@ -135,7 +137,6 @@ body{
      display: inline-block;
      font-weight: 400;
      line-height: 1.5;
-     margin-bottom: 10px;
  }
 
  .red-h2{
@@ -209,11 +210,13 @@ body{
 .cont-vacancy{
     margin-left: auto;
     margin-right: auto;
-
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color:#ffffff;
     border: 6px #363636;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
 
@@ -236,7 +239,6 @@ body{
     font-family: "Gilroy Bold";
     font-size: 20px;
     color: #777575;
-    padding-top: 10px;
 
 }
 .cont-vac-name p{
@@ -272,11 +274,23 @@ body{
     color: #ffffff;
     width: 100%;
 }
+.logo-vacancy-cont{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
 
-.my-alerts{
-    font-family: Roboto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+}
+
+.logo-vacancy{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    max-width: 100%;
+
 }
 
 

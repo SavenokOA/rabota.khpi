@@ -24,15 +24,15 @@ class VacancyFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'NameVacancy'=>'required|min:5|max:20|',
+            'NameVacancy'=>'required|min:5|max:50|',
             'NameCompany'=>'required|min:3|max:20|nullable',
-            'ScopeCompany'=>'max:50|string|nullable',
+            'ScopeCompany'=>'max:500|string|nullable',
             'ActivityCompany'=>'max:50|',
             'WebsiteCompany'=>'nullable|string',
             'NumberCompany'=>'required|numeric|',
             'EmailCompany'=>'required|email:rfc,dns',
             'LogoCompany'=>'file|image|nullable|max:300',
-            'VacancyDescription'=>'required|max:1000',
+            'VacancyDescription'=>'required|max:3000',
         ];
     }
 

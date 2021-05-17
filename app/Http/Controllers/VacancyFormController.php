@@ -10,7 +10,8 @@ use function Composer\Autoload\includeFile;
 
 class VacancyFormController extends Controller
 {
-    public function add_vacancy(VacancyFormRequest $request){
+    public function add_vacancy(VacancyFormRequest $request)
+    {
       $vacancy = new Vacancies;
       $vacancy->NameVacancy = $request->input('NameVacancy');
       $vacancy->NameCompany = $request->input('NameCompany');
@@ -34,10 +35,11 @@ class VacancyFormController extends Controller
                   ]);
       }
       else{
-          return back()->with([
+          return back()->with(
+              [
               'success'=>'The vacancy has been successfully saved and is awaiting a moderator check. Soon, you will be able to see her among other vacancies on our website',
               'image'=>$imageName
-              ] );
+              ]);
       }
     }
 }

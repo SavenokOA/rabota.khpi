@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Vacancies;
 use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
 
@@ -9,25 +10,30 @@ class MainController extends Controller
    public  function changeLocale($locale){
 
        $AvaibleLocales =['ru', 'en'];
-       if (!in_array($locale, $AvaibleLocales)){
-           $nolocale=config('app.locale');
-       }
+
        session(['locale' =>$locale]);
        App::setLocale($locale);
 
-       return view('welcome');
+
+       return view('welcome',['vacancy'=>Vacancies::all()]);
 
    }
 
-   public  function ReturnLocale (){
+   public function ReturnLocale (){
        session(['locale' =>'en']);
        App::setLocale('en');
-       return view('welcome');
+       return view('welcome',['vacancy'=>Vacancies::all()]);
    }
 
-    public function index()
+   public function allVacancy(){
+
+      return view('welcome', ['vacancy'=>Vacancies::all()]);
+   }
+
+   public function index()
     {
-        //
+
+
     }
 
 

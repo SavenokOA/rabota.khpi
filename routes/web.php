@@ -10,7 +10,7 @@ use App\Http\Controllers\MainController;
 Route::middleware(['set_locale'])->group(function(){
 
     Route::get('/', [MainController::class, 'ReturnLocale']);
-    Route::get('/main', [MainController::class, ''])->name('welcome');
+    Route::get('/main', [MainController::class, 'allVacancy'])->name('welcome');
 
 
     Route::get('locale/{locale}', [MainController::class, 'changeLocale'])->name('locale');
