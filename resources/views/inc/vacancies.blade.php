@@ -2,21 +2,21 @@
 <div class="container">
     <h2 class="red-h2">@lang('main.vacancies')</h2>
     <div class="row vac-row" style="margin-top: 50px">
-        @foreach($vacancy as $el)
+        @for($i=0; $i<5; $i++)
 
         <div class="col-md-4" style="margin-top: 20px">
             <div class=" container cont-vacancy">
                 <div class="row">
                     <div class="container logo-vacancy-cont col-5">
-                        <img class="logo-vacancy center-block" src="{{$el->LogoCompany}}" alt=""></div>
+                        <img class="logo-vacancy center-block" src="{{$vacancy[$i]->LogoCompany}}" alt=""></div>
                     <div class="cont-vac-name col-7">
-                        <h4>{{$el->NameVacancy}}</h4>
-                        <p>{{$el->NameCompany}}</p>
+                        <h4>{{$vacancy[$i]->NameVacancy}}</h4>
+                        <p>{{$vacancy[$i]->NameCompany}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        @endforeach
+        @endfor
 
 
 
