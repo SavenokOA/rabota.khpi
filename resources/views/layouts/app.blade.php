@@ -15,7 +15,7 @@
 <body>
 
 
-        @include('inc.side-header')
+@include('inc.side-header')
 
 
             @yield('content')

@@ -9,7 +9,7 @@ class MainController extends Controller
 {
    public  function changeLocale($locale){
 
-       $AvaibleLocales =['ru', 'en'];
+
 
        session(['locale' =>$locale]);
        App::setLocale($locale);
