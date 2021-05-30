@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="red-h2">@lang('main.add_vacancy')</h2>
+    <h2 class="red-h2" id="add_vacancy">@lang('main.add_vacancy')</h2>
     <br>
     @if ($errors->any())
         <div class="alert alert-danger">

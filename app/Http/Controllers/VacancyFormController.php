@@ -42,4 +42,11 @@ class VacancyFormController extends Controller
               ]);
       }
     }
+
+
+    public function ApplyVacancy(){
+
+    }
+
+
 }

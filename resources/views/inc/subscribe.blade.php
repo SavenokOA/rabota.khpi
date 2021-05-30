@@ -1,12 +1,15 @@
 <div class="row main-row">
     <div class="col-md">
         <div class="container mail-top">
-            <p class="mail-top">@lang('main.find_a_job_mail')</p>
+            <p class="mail-top" style="margin-left: 12px">@lang('main.find_a_job_mail')</p>
             <p class="mail-top-subscription">@lang('main.you_can_mail')</p>
             <div class="input-group mb-3" style="margin-bottom: 20px">
+                <form action="{{route('subscribe.store')}}" style="border-color: transparent" class="form-control"  method="POST" enctype="multipart/form-data">
                 @csrf
-                <input type="text" class="form-control" placeholder="@lang('main.enter_email')" aria-label="@lang('main.enter_email')" aria-describedby="button-addon2">
-                <button class="btn button-" style="background-color: #BF1812;color:#ffffff;" type="button" id="button-email">@lang('main.subscribe')</button>
+                <input type="text" name="email" class="form-control button-email" placeholder="@lang('main.enter_email')" aria-label="@lang('main.enter_email')" aria-describedby="button-addon2">
+                    <br>
+                <button class="btn button-" style="background-color: #BF1812;color:#ffffff;" type="submit" id="button-email">@lang('main.subscribe')</button>
+                </form>
             </div>
 
         </div>

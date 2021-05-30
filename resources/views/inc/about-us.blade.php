@@ -1,5 +1,5 @@
 <div class="row">
-    <h2 class="red-h2">@lang('main.about_us')</h2>
+    <h2 class="red-h2" id="about_us">@lang('main.about_us')</h2>
     <p id="text-about-us">@lang('main.about_us_desc')</p>
     <h3 class="team-work">@lang('main.team') </h3>
 </div>

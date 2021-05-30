@@ -18,7 +18,7 @@
 @include('inc.side-header')
 
 
-            @yield('content')
+@yield('content')
 
 
 

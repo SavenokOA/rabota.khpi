@@ -15,8 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts= Post::orderBy('created_at','desc')->get();
-        return view('admin.post.index',['posts'=>$posts]);
+        $post= Post::orderBy('created_at','desc')->get();
+        return view('admin.post.index',['post'=>$post]);
     }
 
     /**
@@ -68,7 +68,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('admin.post.edit',['post'=>$post]);
     }
 
     /**
@@ -80,7 +80,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post->title=$request->input('title');
+        $post->text=$request->input('text');
+        $post->short_desc=$request->input('short_desc');
+        $imageName= time().'.'.$request->photo->extension();
+        $request->photo->move(public_path('image/news'), $imageName);
+        $imagePath='/image/news/'.$imageName;
+        $post->img =$imagePath;
+        $post->save();
+        return back()->with(['success'=>'Ярмарка была успешно обновлена!']);
     }
 
     /**
@@ -91,6 +99,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->back()->withSuccess('Статья была успешно удалена!');
     }
 }

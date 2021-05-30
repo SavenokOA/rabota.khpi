@@ -26,6 +26,13 @@ return[
     'vacancy_description'=>'Vacancy description (requirements, conditions, mode of work)',
     'choose_logo'=>'Choose the logo',
     'browse'=>'Browse',
+    'job_fair'=>'Job Fair',
+    'job_fair_about'=>'The job fair is a specialized event where employers and graduates have the opportunity to communicate in person, get first-hand information and find their dream job',
+    'more_about'=>'Learn more',
+    'help_info'=>'Helpful information',
+    'main_office'=>'Main office',
+    'phone_number'=>'Phone number',
+    'email'=>'Email',
 
 
 

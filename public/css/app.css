@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Gilroy Medium';
+    src: url(/fonts/Gilroy-Medium.eot);
+    src: url(/fonts/Gilroy-Medium.eot?#iefix) format('embedded-opentype'),
+    url(/fonts/Gilroy-Medium.woff) format('woff'),
+    url(/fonts/Gilroy-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Gilroy-Regular';
     src: url(/fonts/gilroy-regular.eot); /* IE 9 Compatibility Mode */
     src: url(/fonts/gilroy-regular.eot?#iefix) format('embedded-opentype'), /* IE < 9 */
@@ -120,6 +129,7 @@ body{
 
  }
  .mail-top-subscription{
+     margin-left: 12px;
      font-family: 'Graphik Medium';
      color: #646D89;
      font-size: 20px;
@@ -175,6 +185,7 @@ body{
 
 
 @media(min-width: 768px) {
+
     .adv-photo{
         margin-top: 113px;
         width: 100%;
@@ -190,6 +201,9 @@ body{
 }
 
 @media(max-width: 768px) {
+
+
+
     .adv-photo{
         width: 100%;
         height: auto;
@@ -288,9 +302,92 @@ body{
     width: 100%;
     height: 100%;
     display: block;
-
     max-width: 100%;
+}
 
+.fair-photo{
+    width: 95%;
+    height: auto;
+}
+#text-about-fair{
+    font-family: 'Gilroy Medium';
+    color: #1D253C;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 500px;
+}
+.btn-learn{
+    font-family: 'Gilroy Semibold';
+    color: #363636;
+    font-size: 25px;
+    width: 475px;
+    height: 50px;
+    margin-top: 9px;
+}
+
+.help-photo{
+    width: 96%;
+    height: auto;
+}
+
+.news-item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.left-item{
+    height: 540px;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-radius: .35rem;
+}
+.right-item{
+    height: 250px;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-radius: .25rem;
+}
+#left-news-photo{
+    width: 100%;
+    height: auto;
+    border: 5px solid transparent;
+    border-radius: 1.25rem;
+}
+.mini-photo-news{
+    border: 5px solid transparent;
+    border-radius: 1.25rem;
+    width: 100%;
+    height: auto;
+}
+.news-title{
+    font-family: "Gilroy Semibold";
+    font-size: 20px;
+    color: #363636;
+}
+
+.news-desc{
+    font-family: "Gilroy Semibold";
+    font-size: 18px;
+    color: #363636;
+}
+.icons{
+    width: 10%;
+    height: auto;
+}
+.contact-foot{
+    font-family: "Gilroy Bold";
+    font-size: 30px;
+    color: #363636;
+}
+.contact-foot-p {
+    font-family: "Gilroy Semibold";
+    font-size: 25px;
+    color: #363636;
+}
+.link-job{
+    font-family: "Gilroy Bold";
+    font-size: 20px;
+    color: #777575;
+    text-decoration-line: none;
 }
 
 

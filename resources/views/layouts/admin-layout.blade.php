@@ -87,7 +87,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link ">
+                        <a href="{{route('vacancy.index')}}" class="nav-link ">
                             <i class="far fa-address-card"></i>
                             <p>
                                 Вакансии
@@ -96,24 +96,49 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link ">
+                                <a href="{{route('vacancy.index')}}" class="nav-link ">
                                     <i class="fas fa-check-circle"></i>
                                     <p>Одобрить вакансию</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./index2.html" class="nav-link">
+                                <a href="{{route('vacancies.index')}}" class="nav-link">
                                     <i class="fas fa-trash"></i>
-                                    <p>Удалить вакансию</p>
+                                    <p>Удалить активную</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="./index3.html" class="nav-link">
-                                    <i class="far fa-edit"></i>
-                                    <p>Редактировать вакансию</p>
-                                </a>
-                            </li>
+
                         </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{route('fair.index')}}" class="nav-link ">
+                            <i class="fas fa-peace"></i>
+                            <p>Ярмарка вакансий</p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{route('fair.index')}}" class="nav-link ">
+                                    <i class="far fa-folder-open"></i>
+                                    <p>Все ярмарки</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{route('fair.create')}}" class="nav-link ">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Добавить новую</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{route('subscribe.index')}}" class="nav-link ">
+                            <i class="fas fa-paper-plane"></i>
+                            <p>Подписчики</p>
+                        </a>
                     </li>
                 </ul>
 
@@ -173,5 +198,6 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard.js"></script>
 <script src="/admin/admin.js"></script>
+
 </body>
 </html>

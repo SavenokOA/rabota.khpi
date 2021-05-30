@@ -14,6 +14,10 @@
     @include('inc.about-us')
     @include('inc.vacancies')
     @include('inc.add-vacancy')
+    @include('inc.fair')
+    @include('inc.help-info')
+    @include('inc.news')
+    @include('inc.contact')
 
 </div>
 @endsection

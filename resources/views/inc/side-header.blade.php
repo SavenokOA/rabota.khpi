@@ -12,25 +12,25 @@
     <div class="collapse navbar-collapse justify-content-center" style="margin-top: -30px;" id="navbarNav">
         <ul class="navbar-nav my_nav" >
             <li class="nav-item active">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.about_us')<span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color: #363636;" href="#about_us">@lang('main.about_us')<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.vacancies')</a>
+                <a class="nav-link" style="color: #363636;" href="#vacancies">@lang('main.vacancies')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.add_vacancy')</a>
+                <a class="nav-link" style="color: #363636;" href="#add_vacancy">@lang('main.add_vacancy')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.job_fair_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#fair">@lang('main.job_fair_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.helpful_information_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#help_info">@lang('main.helpful_information_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.news_and_projects_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#news">@lang('main.news_and_projects_navbar')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #363636;" href="#">@lang('main.contacts_navbar')</a>
+                <a class="nav-link" style="color: #363636;" href="#contacts">@lang('main.contacts_navbar')</a>
             </li>
 
             <li class="nav-item" style="margin: 0 30px;">

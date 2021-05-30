@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Post;
 use App\Models\Vacancies;
 use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
@@ -13,21 +14,28 @@ class MainController extends Controller
 
        session(['locale' =>$locale]);
        App::setLocale($locale);
-
-
-       return view('welcome',['vacancy'=>Vacancies::all()]);
+       $posts= Post::orderBy('created_at','desc')->get();
+       $vacancies= Vacancies::where('Approved','1')->orderBy('created_at','desc')->get();
+       return view('welcome',[
+           'vacancy'=>$vacancies,
+           'post'=>$posts,
+       ]);
 
    }
 
    public function ReturnLocale (){
        session(['locale' =>'en']);
        App::setLocale('en');
-       return view('welcome',['vacancy'=>Vacancies::all()]);
+       $vacancies= Vacancies::where('Approved','1')->orderBy('created_at','desc')->get();
+       return view('welcome',['vacancy'=>$vacancies]);
+
+
    }
 
    public function allVacancy(){
 
-      return view('welcome', ['vacancy'=>Vacancies::all()]);
+       $vacancies= Vacancies::where('Approved','1')->orderBy('created_at','desc')->get();
+       return view('welcome',['vacancy'=>$vacancies]);
    }
 
    public function index()
