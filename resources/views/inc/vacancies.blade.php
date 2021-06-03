@@ -10,7 +10,7 @@
                     <div class="container logo-vacancy-cont col-6">
                         <img class="logo-vacancy center-block" src="{{$vacancy[$i]->LogoCompany}}" alt=""></div>
                     <div class="cont-vac-name col-6">
-                        <h4><a class="link-job"  href="">{{$vacancy[$i]->NameVacancy}}</a></h4>
+                        <h4><a class="link-job"  href="{{route('this_vacancy', $id = $vacancy[$i]->id)}}">{{$vacancy[$i]->NameVacancy}}</a></h4>
                         <p>{{$vacancy[$i]->NameCompany}}</p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
 
     <div class="col-md-4" id="view-all">
         <div class=" container" >
-           <center> <a href="#">@lang('main.view_all')</a></center>
+           <center> <a href="{{route('all-vacancies')}}">@lang('main.view_all')</a></center>
         </div>
     </div>
 </div>

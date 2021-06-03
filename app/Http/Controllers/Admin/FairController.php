@@ -43,7 +43,7 @@ class FairController extends Controller
         $fair->short_desc=$request->input('short_desc');
         $imageName= time().'.'.$request->photo->extension();
         $request->photo->move(public_path('image/fairs'), $imageName);
-        $imagePath='/image/news/'.$imageName;
+        $imagePath='/image/fairs/'.$imageName;
         $fair->img =$imagePath;
         $fair->save();
         return back()->with(['success'=>'Ярмарка была успешно добавлена!']);

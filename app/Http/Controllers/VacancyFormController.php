@@ -43,6 +43,10 @@ class VacancyFormController extends Controller
       }
     }
 
+    public function add_response(){
+
+    }
+
 
     public function ApplyVacancy(){
 

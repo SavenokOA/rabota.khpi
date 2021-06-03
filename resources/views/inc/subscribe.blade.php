@@ -1,4 +1,11 @@
 <div class="row main-row">
+    @if($errors->any())
+        <div class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li class="my-alerts">{{$error}}</li>
+            @endforeach
+        </div>
+    @endif
     <div class="col-md">
         <div class="container mail-top">
             <p class="mail-top" style="margin-left: 12px">@lang('main.find_a_job_mail')</p>

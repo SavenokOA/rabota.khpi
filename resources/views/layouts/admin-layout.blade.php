@@ -140,6 +140,12 @@
                             <p>Подписчики</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{route('response.index')}}" class="nav-link ">
+                            <i class="fas fa-business-time"></i>
+                            <p>Отклики на вакансии</p>
+                        </a>
+                    </li>
                 </ul>
 
             </nav>

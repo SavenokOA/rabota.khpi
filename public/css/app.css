@@ -297,6 +297,15 @@ body{
     grid-gap: 1rem;
 
 }
+.logo-vacancy-cont-all{
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+
+}
 
 .logo-vacancy{
     width: 100%;
@@ -389,5 +398,86 @@ body{
     color: #777575;
     text-decoration-line: none;
 }
+.this-vacancy-company{
+    font-family: "Gilroy Semibold";
+    font-size: 20px;
+    color: #363636;
+}
+.this-vacancy-topic{
+    font-family: 'Gilroy Bold';
+    color: #5B0000;
+    font-size: 40px;
+}
+.contacts-vacancy{
+    font-family: 'Gilroy Medium';
+    color: #1D253C;
+    font-size: 16px;
+}
+.cont-this-vacancy{
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#ffffff;
+
+}
+.name-this-vac{
+    height: 10em;
+    display: flex;
+    align-items: center;
+}
+.name-this-vac p{
+    margin: 0;
+    font-family: "Gilroy Semibold";
+    font-size: 40px;
+    color: #363636;
+}
+.logo-vacancy-cont-this{
+    border: 6px #363636;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.vac-desc{
+    padding: 15px;
+}
+.br {
+    white-space: pre;
+    font-family: "Gilroy Medium";
+    font-size: 17px;
+    color: #363636;
+    white-space: pre-wrap;
+}
+.contact-data{
+    font-family: "Gilroy Semibold";
+    font-size: 15px;
+    color: #5B0000;
+}
+.visit-card{
+    background-color:rgba(212, 212, 212, 0.5);
+    border: 6px #363636;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 500px;
+}
+.visit-list{
+    font-family: Gilroy "Gilroy Semibold";
+    font-size: 15px;
+    color: #5B0000;
+}
+.fair-topic{
+    font-family: 'Gilroy Bold';
+    color: #5B0000;
+    font-size: 25px;
+}
+
+.fair-text{
+    font-family: Gilroy "Gilroy Semibold";
+    font-size: 15px;
+    color: #5B0000;
+}
+
+
+
 
 

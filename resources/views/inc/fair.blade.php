@@ -4,7 +4,10 @@
         <h2 class="red-h2 " id="fair">@lang('main.job_fair')</h2>
         <p id="text-about-fair">@lang('main.job_fair_about')</p>
             <br>
-            <button class="btn btn-learn" style="background-color: #BF1812;color:#ffffff;" type="submit" id="button-fair">@lang('main.more_about')</button>
+            <form action="{{route('all-fairs')}}" target="_blank">
+                <button class="btn btn-learn" style="background-color: #BF1812;color:#ffffff;" type="submit" id="button-fair">@lang('main.more_about')</button>
+            </form>
+
         </div>
     </div>
 
